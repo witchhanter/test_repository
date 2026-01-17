@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" sizes="16x16" href="icons8-мужчина-стоит-50.png">
+        <title>Регистрация</title> 
+        <link rel="stylesheet" href="style_reg.css">
+    </head>
+    <body>
+        <div class="child glass-border">
+            <h1 style="text-shadow: 3px 3px 3px rgba(0,0,0,0.3); color: rgb(255, 255, 255)" class="fade-up">Регистрация</h1>
+            
+            <input type="text" id="nameInput" placeholder="Введите Ваше имя" class="glass-input fade-up">
+            <input type="email" id="emailInput" placeholder="Введите email" class="glass-input fade-up">
+            <input type="password" id="passwordInput" placeholder="Введите пароль" class="glass-input fade-up">
+            <input type="password" id="confirmPasswordInput" placeholder="Повторите пароль" class="glass-input fade-up">
+            
+            <div class="checkbox-row fade-up">
+                <div class="checkbox-container fade-up">
+                    <input type="checkbox" id="agreeCheckbox" class="fade-up">
+                    <label for="agreeCheckbox" class="fade-up">Согласен с условиями</label>
+                </div>
+            </div>
+            
+            <button class="button fade-up" id="registerBtn">Зарегистрироваться</button>
+            
+            <div id="message" style="color: white; margin-top: 10px; font-size: 14px; text-align: center; height: 20px;"></div>
+            
+            <table>
+                <tr class="fade-up">
+                    <td colspan="2" style="padding-top: 10px;">
+                        <a href="login.html" class="register-link fade-up">Уже есть аккаунт? Войти</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <script src="script_reg.js"></script>
+    </body>
+</html>

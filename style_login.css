@@ -1,0 +1,218 @@
+html {
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e,#e73c7e,#e73c7e,#e73c7e,#e73c7e, #23a6d5, #23d5ab);
+    /* background-size: 170% 170%; */
+    background-size: 400% 400%;
+}
+
+.child {
+    background: linear-gradient(-70deg, #e73c7e, #23a6d5, #23d5ab);
+    margin: auto;
+    width: 300px;
+    height: 340px;
+    margin-top: 11%;
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.child h1 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.child input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.checkbox-row {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+.checkbox-container label {
+    color: white;
+    font-size: 14px;
+}
+
+.child button {
+    width: 95%;
+    padding: 10px;
+    background-color: #23a6d5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    background: rgba(58, 185, 207, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.child button:hover {
+    /* background-color: #1e8db8; */
+
+    background: rgba(255, 255, 255, 0.068);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.child:hover {
+    box-shadow: 
+        0 60px 60px rgba(0, 0, 0, 0.1),
+        0 60px 60px rgba(0, 0, 0, 0.08);
+    /* transform: translateY(-2px); */
+}
+
+.register-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s;
+    position: relative;
+    padding-top: 10px;
+}
+
+.register-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.register-link:hover {
+    color: #8fffec;
+}
+
+.register-link1 {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s;
+    position: relative;
+    padding-top: 10px;
+}
+
+.register-link1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.register-link1:hover {
+    color: #8fffec;
+}
+.glass-border {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-border::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, 
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 22px;
+    z-index: -1;
+    filter: blur(20px);
+}
+
+.child input {
+    background: rgba(58, 185, 207, 0.172);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    outline: none;
+    transition: all 0.3s ease;
+
+    caret-color: white;
+    color: white;
+}
+
+.child input:focus {
+    background: rgba(255, 255, 255, 0.068);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow: 
+        0 4px 6px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Для стандартной иконки браузера */
+input[type="password"]::-ms-reveal {
+    filter: brightness(0) invert(1); /* Черный → Белый */
+}
+
+/* Для WebKit браузеров (Chrome, Safari, Edge) */
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-webkit-caps-lock-indicator,
+input[type="password"]::-webkit-credentials-auto-fill-button {
+    filter: invert(1) brightness(2);
+}
+
+/* Иконка показа/скрытия пароля */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-webkit-credentials-auto-fill-button {
+    filter: invert(1);
+}
+
+.glass-input::placeholder {
+    color: white;
+    opacity: 0.8; /* Делаем немного прозрачным для лучшего вида */
+}
+
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
